@@ -1,0 +1,16 @@
+@mixin grid-display($gtc, $gtr, $gatr, $jtc, $ali, $gap) {
+  display: grid;
+  grid-template-columns: $gtc;
+  grid-template-rows: $gtr;
+  grid-auto-rows: $gatr;
+  justify-content: $jtc;
+  align-items: $ali;
+  gap: $gap;
+}
+
+@mixin flex-display($flex-dir, $jtc, $ali) {
+  display: flex;
+  flex-direction: $flex-dir;
+  justify-content: $jtc;
+  align-items: $ali;
+}

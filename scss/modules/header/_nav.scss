@@ -1,0 +1,67 @@
+@use '../mixins';
+
+nav {
+  width: 100%;
+  padding: 20px 10%;
+  box-sizing: border-box;
+  @include mixins.grid-display(40% 1fr, none, none, space-between, center, none);
+
+  .nav-logo {
+    a {
+      @include mixins.flex-display(row, flex-start, center);
+
+      h2 {
+        margin-left: 5px;
+        font-size: 2rem;
+        color: #194990;
+      }
+    }
+  }
+
+  .nav-menus {
+    @include mixins.flex-display(row, space-between, center);
+
+    li.nav-list {
+      a {
+        color: #1a1a1a;
+
+        button {
+          color: #194990;
+          padding: 1rem 2rem;
+          background-color: transparent;
+          border: 1px solid rgba(25, 73, 144, 0.5);
+          box-sizing: border-box;
+          border-radius: 10px;
+          cursor: pointer;
+          transition: all 0.3s ease;
+
+          &:hover {
+            background-color: #194990;
+            color: #fff;
+          }
+        }
+      }
+
+      a::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 3px;
+        border-radius: 3px;
+        background-color: #ddd;
+        transition: all 0.3s ease;
+      }
+
+      a:hover::after {
+        width: 100%;
+      }
+    }
+
+    li.nav-list:last-child {
+      a::after {
+        content: '';
+        display: none;
+      }
+    }
+  }
+}
