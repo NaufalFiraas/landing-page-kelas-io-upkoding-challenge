@@ -35,6 +35,10 @@ nav .nav-logo a h2 {
   margin-left: 5px;
   font-size: 2rem;
   color: #194990;
+  transition: all 0.3s ease;
+}
+nav .nav-logo a h2:hover {
+  text-shadow: 1px 1px 3px #00000080;
 }
 nav .nav-menus {
   display: flex;
