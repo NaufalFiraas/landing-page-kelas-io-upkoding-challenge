@@ -1,0 +1,50 @@
+@use '../mixins';
+.jumbotron {
+  @include mixins.flex-display(row, space-between, center);
+  padding: 0 10%;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+
+  .jumbotron-banner {
+    width: 40%;
+    text-align: left;
+
+    h2 {
+      font-weight: 700;
+      font-size: 3.2rem;
+      margin-bottom: 10px;
+      span {
+        font-size: 3rem;
+        font-weight: 700;
+        color: #194990;
+      }
+    }
+
+    p {
+      line-height: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .apple-google {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      .appStore {
+        margin-right: 15px;
+      }
+    }
+  }
+
+  .jumbotron-image {
+    width: 60%;
+
+    img {
+      width: 120%;
+      height: 570px;
+      z-index: 3;
+      margin-bottom: -5px;
+    }
+  }
+}

@@ -13,10 +13,16 @@ a {
   text-decoration: none;
 }
 
+body {
+  height: 1000px;
+}
+
 header {
   width: 100%;
   height: 100vh;
   background: linear-gradient(180deg, rgba(58, 131, 240, 0.4) 0%, rgba(58, 131, 240, 0.2) 100%);
+  position: relative;
+  overflow: hidden;
 }
 
 nav {
@@ -98,7 +104,7 @@ nav .nav-toggle {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: end;
   height: 20px;
   cursor: pointer;
   display: none;
@@ -107,7 +113,10 @@ nav .nav-toggle span {
   width: 27px;
   height: 3px;
   border-radius: 3px;
-  background-color: #194991;
+  background-color: #1a1a1a;
+}
+nav .nav-toggle span:nth-child(2) {
+  width: 60%;
 }
 
 @media (max-width: 992px) {
@@ -128,19 +137,22 @@ nav .nav-toggle span {
     text-align: center;
     opacity: 0;
     cursor: pointer;
-    z-index: 3;
+    z-index: 99;
   }
   nav .checkbox:checked ~ .nav-toggle span:first-child {
     transform-origin: 0 0;
     transform: rotateZ(45deg);
+    background-color: #fff;
   }
   nav .checkbox:checked ~ .nav-toggle span:last-child {
     transform-origin: 0 100%;
     transform: rotateZ(-45deg) translate(-1px, 1px);
+    background-color: #fff;
   }
   nav .checkbox:checked ~ .nav-toggle span:nth-child(2) {
     opacity: 0;
     scale: 0;
+    background-color: #fff;
   }
   nav .checkbox:checked ~ .nav-menus {
     opacity: 1;
@@ -153,7 +165,7 @@ nav .nav-toggle span {
     align-items: center;
     width: 100vw;
     position: absolute;
-    top: 80px;
+    top: 0px;
     left: 0;
     padding: 38px;
     box-sizing: border-box;
@@ -161,6 +173,8 @@ nav .nav-toggle span {
     transform: translateY(-200px);
     transition: all 0.3s ease;
     background-color: #194991;
+    z-index: 97;
+    margin-bottom: 10px;
   }
   nav .nav-menus li.nav-list {
     margin-bottom: 30px;
@@ -182,10 +196,56 @@ nav .nav-toggle span {
   }
   nav .nav-toggle {
     display: flex;
+    z-index: 98;
   }
   nav .nav-toggle span {
     transition: all 0.3s ease;
   }
+}
+.jumbotron {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+}
+.jumbotron .jumbotron-banner {
+  width: 40%;
+  text-align: left;
+}
+.jumbotron .jumbotron-banner h2 {
+  font-weight: 700;
+  font-size: 3.2rem;
+  margin-bottom: 10px;
+}
+.jumbotron .jumbotron-banner h2 span {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #194990;
+}
+.jumbotron .jumbotron-banner p {
+  line-height: 2rem;
+  margin-bottom: 10px;
+}
+.jumbotron .jumbotron-banner .apple-google {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.jumbotron .jumbotron-banner .apple-google .appStore {
+  margin-right: 15px;
+}
+.jumbotron .jumbotron-image {
+  width: 60%;
+}
+.jumbotron .jumbotron-image img {
+  width: 120%;
+  height: 570px;
+  z-index: 3;
+  margin-bottom: -5px;
 }
 
 /*# sourceMappingURL=main.css.map */

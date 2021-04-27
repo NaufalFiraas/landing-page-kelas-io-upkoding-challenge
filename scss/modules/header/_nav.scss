@@ -79,7 +79,7 @@ nav {
 
   .nav-toggle {
     grid-area: toggle;
-    @include mixins.flex-display(column, space-between, center);
+    @include mixins.flex-display(column, space-between, end);
     height: 20px;
     cursor: pointer;
     display: none;
@@ -88,7 +88,11 @@ nav {
       width: 27px;
       height: 3px;
       border-radius: 3px;
-      background-color: #194991;
+      background-color: #1a1a1a;
+
+      &:nth-child(2) {
+        width: 60%;
+      }
     }
   }
 }
