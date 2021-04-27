@@ -10,6 +10,18 @@
     align-items: center;
     gap: 10px;
 
+    .checkbox {
+      display: block;
+      position: absolute;
+      right: 9.5%;
+      top: 30px;
+      width: 35px;
+      height: 30px;
+      text-align: center;
+      opacity: 0;
+      cursor: pointer;
+    }
+
     .nav-menus {
       @include mixins.flex-display(column, center, center);
       width: 100vw;

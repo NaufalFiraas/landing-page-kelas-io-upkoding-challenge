@@ -26,6 +26,9 @@ nav {
   gap: none;
   grid-template-areas: "logo menus";
 }
+nav .checkbox {
+  display: none;
+}
 nav .nav-logo {
   grid-area: logo;
 }
@@ -108,6 +111,17 @@ nav .nav-toggle span {
     grid-auto-rows: max-content;
     align-items: center;
     gap: 10px;
+  }
+  nav .checkbox {
+    display: block;
+    position: absolute;
+    right: 9.5%;
+    top: 30px;
+    width: 35px;
+    height: 30px;
+    text-align: center;
+    opacity: 0;
+    cursor: pointer;
   }
   nav .nav-menus {
     display: flex;

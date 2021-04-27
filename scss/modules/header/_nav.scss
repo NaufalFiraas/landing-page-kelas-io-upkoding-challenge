@@ -7,6 +7,10 @@ nav {
   @include mixins.grid-display(40% 1fr, none, none, space-between, center, none);
   grid-template-areas: 'logo menus';
 
+  .checkbox {
+    display: none;
+  }
+
   .nav-logo {
     grid-area: logo;
     a {
