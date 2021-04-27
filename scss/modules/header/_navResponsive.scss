@@ -20,6 +20,31 @@
       text-align: center;
       opacity: 0;
       cursor: pointer;
+      z-index: 3;
+    }
+
+    .checkbox:checked ~ .nav-toggle {
+      span {
+        &:first-child {
+          transform-origin: (0 0);
+          transform: rotateZ(45deg);
+        }
+
+        &:last-child {
+          transform-origin: (0 100%);
+          transform: rotateZ(-45deg) translate(-1px, 1px);
+        }
+
+        &:nth-child(2) {
+          opacity: 0;
+          scale: 0;
+        }
+      }
+    }
+
+    .checkbox:checked ~ .nav-menus {
+      opacity: 1;
+      transform: translateY(0);
     }
 
     .nav-menus {
@@ -30,6 +55,9 @@
       left: 0;
       padding: 38px;
       box-sizing: border-box;
+      opacity: 0;
+      transform: translateY(-200px);
+      transition: all 0.3s ease;
       background-color: #194991;
       li.nav-list {
         margin-bottom: 30px;
@@ -51,6 +79,9 @@
 
     .nav-toggle {
       display: flex;
+      span {
+        transition: all 0.3s ease;
+      }
     }
   }
 }

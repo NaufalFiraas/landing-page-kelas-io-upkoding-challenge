@@ -122,6 +122,23 @@ nav .nav-toggle span {
     text-align: center;
     opacity: 0;
     cursor: pointer;
+    z-index: 3;
+  }
+  nav .checkbox:checked ~ .nav-toggle span:first-child {
+    transform-origin: 0 0;
+    transform: rotateZ(45deg);
+  }
+  nav .checkbox:checked ~ .nav-toggle span:last-child {
+    transform-origin: 0 100%;
+    transform: rotateZ(-45deg) translate(-1px, 1px);
+  }
+  nav .checkbox:checked ~ .nav-toggle span:nth-child(2) {
+    opacity: 0;
+    scale: 0;
+  }
+  nav .checkbox:checked ~ .nav-menus {
+    opacity: 1;
+    transform: translateY(0);
   }
   nav .nav-menus {
     display: flex;
@@ -134,6 +151,9 @@ nav .nav-toggle span {
     left: 0;
     padding: 38px;
     box-sizing: border-box;
+    opacity: 0;
+    transform: translateY(-200px);
+    transition: all 0.3s ease;
     background-color: #194991;
   }
   nav .nav-menus li.nav-list {
@@ -153,6 +173,9 @@ nav .nav-toggle span {
   }
   nav .nav-toggle {
     display: flex;
+  }
+  nav .nav-toggle span {
+    transition: all 0.3s ease;
   }
 }
 
