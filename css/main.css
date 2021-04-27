@@ -83,7 +83,7 @@ nav .nav-menus li.nav-list a::after {
   width: 0;
   height: 3px;
   border-radius: 3px;
-  background-color: #ddd;
+  background-color: #19499080;
   transition: all 0.3s ease;
 }
 nav .nav-menus li.nav-list a:hover::after {
@@ -167,6 +167,9 @@ nav .nav-toggle span {
   }
   nav .nav-menus li.nav-list a {
     color: #fff;
+  }
+  nav .nav-menus li.nav-list a::after {
+    background-color: #fff;
   }
   nav .nav-menus li.nav-list a button {
     border: 1px solid #fff;
