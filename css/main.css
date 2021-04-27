@@ -123,7 +123,7 @@ nav .nav-toggle span:nth-child(2) {
   nav {
     grid-template-columns: 40% 30px;
     grid-template-areas: "logo toggle" "menus menus";
-    grid-auto-rows: max-content;
+    grid-template-rows: max-content;
     align-items: center;
     gap: 10px;
   }
@@ -164,6 +164,7 @@ nav .nav-toggle span:nth-child(2) {
     justify-content: center;
     align-items: center;
     width: 100vw;
+    height: 70vh;
     position: absolute;
     top: 0px;
     left: 0;
