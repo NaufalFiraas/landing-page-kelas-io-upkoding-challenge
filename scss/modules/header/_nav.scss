@@ -5,8 +5,10 @@ nav {
   padding: 20px 10%;
   box-sizing: border-box;
   @include mixins.grid-display(40% 1fr, none, none, space-between, center, none);
+  grid-template-areas: 'logo menus';
 
   .nav-logo {
+    grid-area: logo;
     a {
       @include mixins.flex-display(row, flex-start, center);
 
@@ -25,6 +27,7 @@ nav {
 
   .nav-menus {
     @include mixins.flex-display(row, space-between, center);
+    grid-area: menus;
 
     li.nav-list {
       a {
@@ -67,6 +70,21 @@ nav {
         content: '';
         display: none;
       }
+    }
+  }
+
+  .nav-toggle {
+    grid-area: toggle;
+    @include mixins.flex-display(column, space-between, center);
+    height: 20px;
+    cursor: pointer;
+    display: none;
+
+    span {
+      width: 27px;
+      height: 3px;
+      border-radius: 3px;
+      background-color: #194991;
     }
   }
 }

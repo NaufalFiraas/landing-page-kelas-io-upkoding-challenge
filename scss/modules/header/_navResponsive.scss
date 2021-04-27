@@ -1,1 +1,44 @@
 @use '../mixins';
+
+@media (max-width: 992px) {
+  nav {
+    grid-template-columns: 40% 30px;
+    grid-template-areas:
+      'logo toggle'
+      'menus menus';
+    grid-auto-rows: max-content;
+    align-items: center;
+    gap: 10px;
+
+    .nav-menus {
+      @include mixins.flex-display(column, center, center);
+      width: 100vw;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      padding: 38px;
+      box-sizing: border-box;
+      background-color: #194991;
+      li.nav-list {
+        margin-bottom: 30px;
+        a {
+          color: #fff;
+          button {
+            border: 1px solid #fff;
+            color: #fff;
+
+            &:hover {
+              background-color: #fff;
+              color: rgba(25, 73, 144, 0.5);
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+
+    .nav-toggle {
+      display: flex;
+    }
+  }
+}
