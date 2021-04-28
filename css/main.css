@@ -241,12 +241,34 @@ nav .nav-toggle span:nth-child(2) {
 }
 .jumbotron .jumbotron-image {
   width: 60%;
+  height: 600px;
+  position: relative;
 }
-.jumbotron .jumbotron-image img {
-  width: 120%;
-  height: 570px;
+.jumbotron .jumbotron-image img.heroImage {
+  width: 130%;
+  height: 100%;
   z-index: 3;
-  margin-bottom: -5px;
+  margin-bottom: 100px;
+  position: relative;
+  bottom: 0px;
+  right: 50px;
+}
+.jumbotron .jumbotron-image img.seniRupaImage,
+.jumbotron .jumbotron-image img.sketsaImage,
+.jumbotron .jumbotron-image img.bahasaIndoImage {
+  position: absolute;
+}
+.jumbotron .jumbotron-image img.bahasaIndoImage {
+  right: -90px;
+  bottom: 150px;
+}
+.jumbotron .jumbotron-image img.seniRupaImage {
+  top: 160px;
+  left: 150px;
+}
+.jumbotron .jumbotron-image img.sketsaImage {
+  bottom: 70px;
+  left: 135px;
 }
 
 /*# sourceMappingURL=main.css.map */
