@@ -1,0 +1,47 @@
+@use '../mixins';
+
+.jumbotron {
+  width: 100%;
+  height: 100%;
+  padding: 0 10%;
+  box-sizing: border-box;
+  @include mixins.grid-display(40% 1fr, 100%, none, space-between, center, none);
+  position: relative;
+
+  .banner {
+    h2 {
+      font-weight: 700;
+      font-size: 3rem;
+      color: #1a1a1a;
+      margin-bottom: 20px;
+      span {
+        font-weight: 700;
+        font-size: 3rem;
+        color: #194990;
+      }
+    }
+
+    p {
+      line-height: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .apple-playstore {
+      @include mixins.flex-display(row, flex-start, center);
+
+      .appStore {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  .hero-regular {
+    display: block;
+    width: 800px;
+    height: 800px;
+    // margin-right: 10px;
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+  }
+}
