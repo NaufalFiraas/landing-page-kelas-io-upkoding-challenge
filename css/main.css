@@ -271,4 +271,60 @@ nav .nav-toggle span:nth-child(2) {
   left: 135px;
 }
 
+@media (max-width: 1050px) {
+  .jumbotron-banner h2 {
+    font-size: 3rem !important;
+  }
+  .jumbotron-banner h2 span {
+    font-size: 3rem !important;
+  }
+
+  .jumbotron-image {
+    width: 50%;
+  }
+}
+@media (max-width: 992px) {
+  .jumbotron {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .jumbotron .jumbotron-banner {
+    width: 100%;
+    height: 40vh;
+  }
+  .jumbotron .jumbotron-banner h2 {
+    margin-right: 40%;
+    font-size: 2rem !important;
+    margin-bottom: 30px;
+  }
+  .jumbotron .jumbotron-banner h2 span {
+    font-size: 2rem !important;
+  }
+  .jumbotron .jumbotron-banner p {
+    margin-bottom: 30px;
+  }
+  .jumbotron .jumbotron-image {
+    width: 100%;
+    height: 45vh;
+    display: flex;
+  }
+  .jumbotron .jumbotron-image img.heroImage,
+.jumbotron .jumbotron-image img.bahasaIndoImage,
+.jumbotron .jumbotron-image img.seniRupaImage,
+.jumbotron .jumbotron-image img.sketsaImage {
+    display: none;
+  }
+  .jumbotron .jumbotron-image .img-resp {
+    background: url("../../../img/jumbotron/mainResp.svg");
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: center;
+    width: 100%;
+    height: 100%;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
