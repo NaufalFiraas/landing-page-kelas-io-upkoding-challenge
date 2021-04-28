@@ -251,6 +251,9 @@ nav .nav-toggle span:nth-child(2) {
   bottom: -15px;
   z-index: 1;
 }
+.jumbotron .hero-resp {
+  display: none;
+}
 
 @media (max-width: 1120px) {
   .jumbotron .banner h2 {
@@ -261,8 +264,101 @@ nav .nav-toggle span:nth-child(2) {
   }
   .jumbotron .hero-regular {
     width: 750px;
-    height: 800px;
+    height: 750px;
     bottom: -30px;
+  }
+}
+@media (max-width: 992px) {
+  .jumbotron {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content;
+    grid-auto-rows: max-content;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: none;
+  }
+  .jumbotron .banner {
+    width: 70%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  .jumbotron .banner h2 {
+    font-size: 2rem;
+  }
+  .jumbotron .banner h2 span {
+    font-size: 2rem;
+  }
+  .jumbotron .hero-regular {
+    display: none;
+  }
+  .jumbotron .hero-resp {
+    display: block;
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    bottom: 0;
+    right: -50px;
+  }
+}
+@media (max-width: 790px) {
+  .jumbotron .banner h2 {
+    font-size: 1.7rem;
+  }
+  .jumbotron .banner h2 span {
+    font-size: 1.7rem;
+  }
+  .jumbotron .hero-resp {
+    height: 500px;
+    width: 500px;
+  }
+}
+@media (max-width: 590px) {
+  .jumbotron .banner {
+    margin-top: 0px;
+  }
+  .jumbotron .banner h2 {
+    font-size: 1.2rem;
+  }
+  .jumbotron .banner h2 span {
+    font-size: 1.2rem;
+  }
+  .jumbotron .banner p {
+    font-size: 0.8rem;
+  }
+  .jumbotron .hero-resp {
+    height: 480px;
+    width: 480px;
+  }
+}
+@media (max-width: 361px) {
+  .jumbotron .banner {
+    margin-top: -10px;
+  }
+  .jumbotron .banner h2 {
+    margin-bottom: 0;
+  }
+  .jumbotron .banner p {
+    margin-bottom: 0;
+  }
+  .jumbotron .banner .apple-playstore {
+    width: 100%;
+    height: 30px;
+  }
+  .jumbotron .banner .apple-playstore .appStore {
+    display: block;
+    width: 80px;
+    height: 100%;
+    margin-right: 2px;
+  }
+  .jumbotron .banner .apple-playstore .playStore {
+    display: block;
+    width: 85px;
+    height: 150%;
+  }
+  .jumbotron .hero-resp {
+    width: 420px;
+    height: 420px;
   }
 }
 

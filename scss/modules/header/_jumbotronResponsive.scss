@@ -13,8 +13,118 @@
 
     .hero-regular {
       width: 750px;
-      height: 800px;
+      height: 750px;
       bottom: -30px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .jumbotron {
+    @include mixins.grid-display(1fr, max-content, max-content, space-between, flex-start, none);
+
+    .banner {
+      width: 70%;
+      margin-bottom: 30px;
+      margin-top: 30px;
+      h2 {
+        font-size: 2rem;
+        span {
+          font-size: 2rem;
+        }
+      }
+    }
+
+    .hero-regular {
+      display: none;
+    }
+
+    .hero-resp {
+      display: block;
+      width: 600px;
+      height: 600px;
+      //   background-color: red;
+      position: absolute;
+      bottom: 0;
+      right: -50px;
+    }
+  }
+}
+
+@media (max-width: 790px) {
+  .jumbotron {
+    .banner {
+      h2 {
+        font-size: 1.7rem;
+        span {
+          font-size: 1.7rem;
+        }
+      }
+    }
+
+    .hero-resp {
+      height: 500px;
+      width: 500px;
+    }
+  }
+}
+
+@media (max-width: 590px) {
+  .jumbotron {
+    .banner {
+      margin-top: 0px;
+      h2 {
+        font-size: 1.2rem;
+        span {
+          font-size: 1.2rem;
+        }
+      }
+      p {
+        font-size: 0.8rem;
+      }
+    }
+
+    .hero-resp {
+      height: 480px;
+      width: 480px;
+    }
+  }
+}
+
+@media (max-width: 361px) {
+  .jumbotron {
+    .banner {
+      margin-top: -10px;
+
+      h2 {
+        margin-bottom: 0;
+      }
+
+      p {
+        margin-bottom: 0;
+      }
+
+      .apple-playstore {
+        width: 100%;
+        height: 30px;
+        .appStore {
+          display: block;
+          width: 80px;
+          height: 100%;
+          margin-right: 2px;
+        }
+
+        .playStore {
+          display: block;
+          width: 85px;
+          height: 150%;
+        }
+      }
+    }
+
+    .hero-resp {
+      width: 420px;
+      height: 420px;
     }
   }
 }
