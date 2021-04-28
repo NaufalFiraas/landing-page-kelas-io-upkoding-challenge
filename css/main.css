@@ -248,8 +248,22 @@ nav .nav-toggle span:nth-child(2) {
   height: 800px;
   position: absolute;
   right: 0;
-  bottom: -10px;
+  bottom: -15px;
   z-index: 1;
+}
+
+@media (max-width: 1120px) {
+  .jumbotron .banner h2 {
+    font-size: 2.5rem;
+  }
+  .jumbotron .banner h2 span {
+    font-size: 2.5rem;
+  }
+  .jumbotron .hero-regular {
+    width: 750px;
+    height: 800px;
+    bottom: -30px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
