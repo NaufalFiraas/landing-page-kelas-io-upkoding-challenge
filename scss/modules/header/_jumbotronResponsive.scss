@@ -74,9 +74,9 @@
     .banner {
       margin-top: 0px;
       h2 {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         span {
-          font-size: 1.2rem;
+          font-size: 1.5rem;
         }
       }
       p {
@@ -87,6 +87,16 @@
     .hero-resp {
       height: 480px;
       width: 480px;
+    }
+  }
+}
+
+@media (max-width: 495px) {
+  .jumbotron {
+    .banner {
+      p {
+        margin-bottom: 5px;
+      }
     }
   }
 }

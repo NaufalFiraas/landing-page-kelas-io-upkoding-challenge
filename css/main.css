@@ -318,10 +318,10 @@ nav .nav-toggle span:nth-child(2) {
     margin-top: 0px;
   }
   .jumbotron .banner h2 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
   .jumbotron .banner h2 span {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
   .jumbotron .banner p {
     font-size: 0.8rem;
@@ -329,6 +329,11 @@ nav .nav-toggle span:nth-child(2) {
   .jumbotron .hero-resp {
     height: 480px;
     width: 480px;
+  }
+}
+@media (max-width: 495px) {
+  .jumbotron .banner p {
+    margin-bottom: 5px;
   }
 }
 @media (max-width: 361px) {
