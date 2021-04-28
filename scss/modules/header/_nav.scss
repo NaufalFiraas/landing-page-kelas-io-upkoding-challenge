@@ -32,6 +32,7 @@ nav {
   .nav-menus {
     @include mixins.flex-display(row, space-between, center);
     grid-area: menus;
+    z-index: 99;
 
     li.nav-list {
       a {
