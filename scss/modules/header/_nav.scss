@@ -80,7 +80,6 @@ nav {
 
   .nav-toggle {
     grid-area: toggle;
-    @include mixins.flex-display(column, space-between, flex-end);
     height: 20px;
     cursor: pointer;
     display: none;
@@ -90,6 +89,14 @@ nav {
       height: 3px;
       border-radius: 3px;
       background-color: #1a1a1a;
+
+      &:first-child {
+        transform-origin: 0 0;
+      }
+
+      &:last-child {
+        transform-origin: 0 100%;
+      }
 
       &:nth-child(2) {
         width: 60%;

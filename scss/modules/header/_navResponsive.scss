@@ -11,7 +11,7 @@
     gap: 10px;
 
     .checkbox {
-      display: none;
+      display: block;
       position: absolute;
       right: 9.5%;
       top: 30px;
@@ -23,28 +23,7 @@
       z-index: 99;
     }
 
-    // .checkbox:checked ~ .nav-toggle {
-    //   span {
-    //     &:first-child {
-    //       transform-origin: (0 0);
-    //       transform: rotateZ(45deg);
-    //       background-color: #fff;
-    //     }
-
-    //     &:last-child {
-    //       transform-origin: (0 100%);
-    //       transform: rotateZ(-45deg) translate(-1px, 1px);
-    //       background-color: #fff;
-    //     }
-
-    //     &:nth-child(2) {
-    //       opacity: 0;
-    //       // scale: 0;
-    //       background-color: #fff;
-    //     }
-    //   }
-    // }
-    .nav-toggle.clicked {
+    .checkbox:checked ~ .nav-toggle {
       span {
         &:first-child {
           transform-origin: (0 0);
@@ -66,11 +45,7 @@
       }
     }
 
-    // .checkbox:checked ~ .nav-menus {
-    //   opacity: 1;
-    //   transform: translateY(0);
-    // }
-    .nav-menus.slide {
+    .checkbox:checked ~ .nav-menus {
       opacity: 1;
       transform: translateY(0);
     }
@@ -113,7 +88,7 @@
     }
 
     .nav-toggle {
-      display: flex;
+      @include mixins.flex-display(column, space-between, flex-end);
       z-index: 98;
       span {
         transition: all 0.3s ease;

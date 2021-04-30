@@ -102,10 +102,6 @@ nav .nav-menus li.nav-list:last-child a::after {
 }
 nav .nav-toggle {
   grid-area: toggle;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-end;
   height: 20px;
   cursor: pointer;
   display: none;
@@ -115,6 +111,12 @@ nav .nav-toggle span {
   height: 3px;
   border-radius: 3px;
   background-color: #1a1a1a;
+}
+nav .nav-toggle span:first-child {
+  transform-origin: 0 0;
+}
+nav .nav-toggle span:last-child {
+  transform-origin: 0 100%;
 }
 nav .nav-toggle span:nth-child(2) {
   width: 60%;
@@ -129,7 +131,7 @@ nav .nav-toggle span:nth-child(2) {
     gap: 10px;
   }
   nav .checkbox {
-    display: none;
+    display: block;
     position: absolute;
     right: 9.5%;
     top: 30px;
@@ -140,21 +142,21 @@ nav .nav-toggle span:nth-child(2) {
     cursor: pointer;
     z-index: 99;
   }
-  nav .nav-toggle.clicked span:first-child {
+  nav .checkbox:checked ~ .nav-toggle span:first-child {
     transform-origin: 0 0;
     transform: rotateZ(45deg);
     background-color: #fff;
   }
-  nav .nav-toggle.clicked span:last-child {
+  nav .checkbox:checked ~ .nav-toggle span:last-child {
     transform-origin: 0 100%;
     transform: rotateZ(-45deg) translate(-1px, 1px);
     background-color: #fff;
   }
-  nav .nav-toggle.clicked span:nth-child(2) {
+  nav .checkbox:checked ~ .nav-toggle span:nth-child(2) {
     opacity: 0;
     background-color: #fff;
   }
-  nav .nav-menus.slide {
+  nav .checkbox:checked ~ .nav-menus {
     opacity: 1;
     transform: translateY(0);
   }
@@ -197,6 +199,9 @@ nav .nav-toggle span:nth-child(2) {
   }
   nav .nav-toggle {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
     z-index: 98;
   }
   nav .nav-toggle span {
