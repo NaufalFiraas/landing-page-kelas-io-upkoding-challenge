@@ -15,6 +15,7 @@ a {
 
 body {
   height: 1000px;
+  overflow-x: hidden;
 }
 
 header {
@@ -461,6 +462,68 @@ nav .nav-toggle span:nth-child(2) {
     max-width: 100%;
     min-width: 200px;
   }
+}
+.explain {
+  width: 100%;
+  height: 10vh;
+  padding: 50px 0 50px 10%;
+  box-sizing: border-box;
+  position: relative;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 400px;
+  grid-auto-rows: 400px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+}
+.explain h3 {
+  font-size: 3rem;
+  color: #1a1a1a;
+  position: absolute;
+  top: 50px;
+  left: 10%;
+}
+.explain h3 span {
+  font-size: 3rem;
+  color: #3a83f0;
+}
+.explain .explain-detail {
+  margin-top: 100px;
+}
+.explain .explain-detail p {
+  line-height: 2rem;
+}
+.explain .explain-detail hr {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.explain .explain-detail .collab {
+  display: flex;
+  align-items: center;
+}
+.explain .explain-detail .collab img {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 25px;
+  background-color: rgba(58, 131, 240, 0.15);
+  border-radius: 50%;
+  padding: 5px;
+}
+.explain .explain-detail .collab .last a {
+  color: #194991;
+  text-decoration: underline;
+}
+.explain .explain-detail .collab .last span {
+  color: #194991;
+}
+.explain .explain-image {
+  grid-area: image;
+  width: 700px;
+  height: 700px;
+  position: absolute;
+  right: -70px;
+  top: -60px;
 }
 
 /*# sourceMappingURL=main.css.map */

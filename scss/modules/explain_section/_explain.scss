@@ -1,0 +1,69 @@
+@use '../mixins';
+
+.explain {
+  width: 100%;
+  height: 10vh;
+  padding: 50px 0 50px 10%;
+  box-sizing: border-box;
+  position: relative;
+  @include mixins.grid-display(40% 60%, 400px, 400px, space-between, center, 0);
+
+  h3 {
+    font-size: 3rem;
+    color: #1a1a1a;
+    position: absolute;
+    top: 50px;
+    left: 10%;
+    span {
+      font-size: 3rem;
+      color: #3a83f0;
+    }
+  }
+
+  .explain-detail {
+    margin-top: 100px;
+
+    p {
+      line-height: 2rem;
+    }
+
+    hr {
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+
+    .collab {
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 2rem;
+        height: 2rem;
+        margin-right: 25px;
+        background-color: rgba(58, 131, 240, 0.15);
+        border-radius: 50%;
+        padding: 5px;
+      }
+
+      .last {
+        a {
+          color: #194991;
+          text-decoration: underline;
+        }
+
+        span {
+          color: #194991;
+        }
+      }
+    }
+  }
+
+  .explain-image {
+    grid-area: image;
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    right: -70px;
+    top: -60px;
+  }
+}
