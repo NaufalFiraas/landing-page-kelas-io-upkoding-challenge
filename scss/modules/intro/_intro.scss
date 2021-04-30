@@ -7,6 +7,18 @@
   @include mixins.flex-display(row, center, center);
   flex-wrap: wrap;
 
+  .line {
+    width: 1px;
+    height: 100px;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: block;
+  }
+
+  hr {
+    display: none;
+  }
+
   .first-intro,
   .second-intro,
   .last-intro {
@@ -14,6 +26,7 @@
     padding: 2em;
     max-width: 25%;
     min-width: 320px;
+    @include mixins.flex-display(column, center, center);
 
     h3 {
       font-size: 3rem;
@@ -30,15 +43,15 @@
     }
   }
 
-  .first-intro {
-    background-color: red;
-  }
+  //   .first-intro {
+  //     background-color: red;
+  //   }
 
-  .second-intro {
-    background-color: green;
-  }
+  //   .second-intro {
+  //     background-color: green;
+  //   }
 
-  .last-intro {
-    background-color: yellow;
-  }
+  //   .last-intro {
+  //     background-color: yellow;
+  //   }
 }

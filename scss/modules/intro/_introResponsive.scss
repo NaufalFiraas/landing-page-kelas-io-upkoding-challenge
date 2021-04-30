@@ -1,0 +1,42 @@
+@media (max-width: 800px) {
+  .intro {
+    flex-direction: column;
+    .line {
+      display: none;
+    }
+
+    hr {
+      display: block;
+      background-color: rgba(0, 0, 0, 0.4);
+      width: 50%;
+      height: 1px;
+      border-radius: 1px;
+    }
+
+    .first-intro,
+    .second-intro,
+    .last-intro {
+      h3 {
+        font-size: 2rem;
+        span {
+          font-size: 2rem;
+        }
+      }
+
+      p {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  .intro {
+    .first-intro,
+    .second-intro,
+    .last-intro {
+      max-width: 100%;
+      min-width: 200px;
+    }
+  }
+}
