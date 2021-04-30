@@ -105,7 +105,7 @@ nav .nav-toggle {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: end;
+  align-items: flex-end;
   height: 20px;
   cursor: pointer;
   display: none;

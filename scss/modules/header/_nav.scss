@@ -80,7 +80,7 @@ nav {
 
   .nav-toggle {
     grid-area: toggle;
-    @include mixins.flex-display(column, space-between, end);
+    @include mixins.flex-display(column, space-between, flex-end);
     height: 20px;
     cursor: pointer;
     display: none;
