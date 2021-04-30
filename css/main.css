@@ -129,7 +129,7 @@ nav .nav-toggle span:nth-child(2) {
     gap: 10px;
   }
   nav .checkbox {
-    display: block;
+    display: none;
     position: absolute;
     right: 9.5%;
     top: 30px;
@@ -140,22 +140,21 @@ nav .nav-toggle span:nth-child(2) {
     cursor: pointer;
     z-index: 99;
   }
-  nav .checkbox:checked ~ .nav-toggle span:first-child {
+  nav .nav-toggle.clicked span:first-child {
     transform-origin: 0 0;
     transform: rotateZ(45deg);
     background-color: #fff;
   }
-  nav .checkbox:checked ~ .nav-toggle span:last-child {
+  nav .nav-toggle.clicked span:last-child {
     transform-origin: 0 100%;
     transform: rotateZ(-45deg) translate(-1px, 1px);
     background-color: #fff;
   }
-  nav .checkbox:checked ~ .nav-toggle span:nth-child(2) {
+  nav .nav-toggle.clicked span:nth-child(2) {
     opacity: 0;
-    scale: 0;
     background-color: #fff;
   }
-  nav .checkbox:checked ~ .nav-menus {
+  nav .nav-menus.slide {
     opacity: 1;
     transform: translateY(0);
   }
