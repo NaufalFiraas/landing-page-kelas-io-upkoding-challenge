@@ -1,0 +1,44 @@
+@use '../mixins';
+
+.intro {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgba(58, 131, 240, 5%);
+  @include mixins.flex-display(row, center, center);
+  flex-wrap: wrap;
+
+  .first-intro,
+  .second-intro,
+  .last-intro {
+    text-align: center;
+    padding: 2em;
+    max-width: 25%;
+    min-width: 320px;
+
+    h3 {
+      font-size: 3rem;
+      color: #194990;
+      margin-bottom: 19px;
+      span {
+        font-size: 3rem;
+        color: #000;
+      }
+    }
+
+    p {
+      line-height: 2rem;
+    }
+  }
+
+  .first-intro {
+    background-color: red;
+  }
+
+  .second-intro {
+    background-color: green;
+  }
+
+  .last-intro {
+    background-color: yellow;
+  }
+}

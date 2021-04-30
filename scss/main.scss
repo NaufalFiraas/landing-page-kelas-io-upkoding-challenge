@@ -1,5 +1,6 @@
 @use 'modules/netral';
 @use 'modules/mixins';
+
 //          Header
 @use 'modules/header/header';
 // Nav
@@ -8,3 +9,6 @@
 // Jumbotron
 @use 'modules/header/jumbotron';
 @use 'modules/header/jumbotronResponsive';
+
+//          Intro
+@use 'modules/intro/intro';

@@ -373,5 +373,50 @@ nav .nav-toggle span:nth-child(2) {
     height: 420px;
   }
 }
+.intro {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgba(58, 131, 240, 0.05);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.intro .first-intro,
+.intro .second-intro,
+.intro .last-intro {
+  text-align: center;
+  padding: 2em;
+  max-width: 25%;
+  min-width: 320px;
+}
+.intro .first-intro h3,
+.intro .second-intro h3,
+.intro .last-intro h3 {
+  font-size: 3rem;
+  color: #194990;
+  margin-bottom: 19px;
+}
+.intro .first-intro h3 span,
+.intro .second-intro h3 span,
+.intro .last-intro h3 span {
+  font-size: 3rem;
+  color: #000;
+}
+.intro .first-intro p,
+.intro .second-intro p,
+.intro .last-intro p {
+  line-height: 2rem;
+}
+.intro .first-intro {
+  background-color: red;
+}
+.intro .second-intro {
+  background-color: green;
+}
+.intro .last-intro {
+  background-color: yellow;
+}
 
 /*# sourceMappingURL=main.css.map */
