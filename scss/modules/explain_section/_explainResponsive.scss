@@ -81,6 +81,13 @@
 
 @media (max-width: 410px) {
   .explain {
+    h3 {
+      font-size: 2rem;
+      span {
+        font-size: 2rem;
+      }
+    }
+
     .explain-image-responsive {
       width: 320px;
 

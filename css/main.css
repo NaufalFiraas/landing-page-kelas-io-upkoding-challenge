@@ -591,6 +591,12 @@ nav .nav-toggle span:nth-child(2) {
   }
 }
 @media (max-width: 410px) {
+  .explain h3 {
+    font-size: 2rem;
+  }
+  .explain h3 span {
+    font-size: 2rem;
+  }
   .explain .explain-image-responsive {
     width: 320px;
   }
@@ -603,7 +609,7 @@ nav .nav-toggle span:nth-child(2) {
   display: none;
   width: 100%;
   height: max-content;
-  padding: 200px 10% 0 10%;
+  padding: 230px 10% 0 10%;
   box-sizing: border-box;
   position: relative;
   display: grid;
@@ -672,6 +678,58 @@ nav .nav-toggle span:nth-child(2) {
 }
 .sekolah-kuliah .sekolah-kuliah-detail .format .details .bold {
   font-weight: 600;
+}
+
+@media (max-width: 992px) {
+  .sekolah-kuliah {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+  }
+  .sekolah-kuliah h3 {
+    width: 70%;
+    top: 0;
+    text-align: right;
+  }
+  .sekolah-kuliah .main-image {
+    height: 250px;
+    top: 190px;
+    margin-bottom: 70px;
+  }
+  .sekolah-kuliah .main-image img {
+    left: -30px;
+  }
+}
+@media (max-width: 770px) {
+  .sekolah-kuliah h3 {
+    width: 80%;
+    font-size: 2.5rem;
+    padding-left: 10%;
+  }
+  .sekolah-kuliah h3 span {
+    font-size: 2.5rem;
+  }
+  .sekolah-kuliah hr {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .sekolah-kuliah .sekolah-kuliah-detail p {
+    font-size: 12px;
+    line-height: 30px;
+  }
+  .sekolah-kuliah .sekolah-kuliah-detail .format .details p {
+    font-size: 10px;
+    line-height: 25px;
+  }
+}
+@media (max-width: 415px) {
+  .sekolah-kuliah h3 {
+    font-size: 2rem;
+  }
+  .sekolah-kuliah h3 span {
+    font-size: 2rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
