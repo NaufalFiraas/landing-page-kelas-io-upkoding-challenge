@@ -4,7 +4,6 @@
     grid-template-areas:
       'img'
       'explain';
-    // gap: 30px;
     padding-left: 0;
 
     .explain-detail {
@@ -94,7 +93,6 @@
       img {
         width: 350px;
         top: -80px;
-        // height: 450px;
       }
     }
   }

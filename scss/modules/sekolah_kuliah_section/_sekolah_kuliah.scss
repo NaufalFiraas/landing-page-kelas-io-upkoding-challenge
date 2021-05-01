@@ -6,7 +6,6 @@
   height: max-content;
   padding: 230px 10% 0 10%;
   box-sizing: border-box;
-  //   background-color: red;
   position: relative;
   @include mixins.grid-display(repeat(2, 50%), max-content, max-content, center, center, 0px);
 
@@ -42,11 +41,9 @@
       top: -120px;
       left: -60px;
     }
-    // background-color: green;
   }
 
   .sekolah-kuliah-detail {
-    // background-color: yellow;
     padding-left: 20px;
     padding-top: 150px;
     box-sizing: border-box;
