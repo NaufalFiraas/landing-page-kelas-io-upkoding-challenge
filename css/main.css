@@ -781,6 +781,9 @@ nav .nav-toggle span:nth-child(2) {
   border-radius: 50%;
   padding: 5px;
 }
+.belajar-online .belajar-online-detail .format p span.bold {
+  font-weight: 600;
+}
 .belajar-online .main-image {
   position: relative;
   height: 400px;
@@ -793,6 +796,68 @@ nav .nav-toggle span:nth-child(2) {
   top: -120px;
   right: -50px;
   position: absolute;
+}
+
+@media (max-width: 992px) {
+  .belajar-online {
+    grid-template-columns: 1fr;
+    grid-template-areas: "img" "detail";
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+  }
+  .belajar-online h3 {
+    width: 60%;
+    top: 80px;
+  }
+  .belajar-online .main-image {
+    grid-area: img;
+    height: 250px;
+    top: 250px;
+    margin-bottom: 180px;
+  }
+  .belajar-online .belajar-online-detail {
+    grid-area: detail;
+  }
+}
+@media (max-width: 770px) {
+  .belajar-online h3 {
+    width: 70%;
+    font-size: 2.5rem;
+  }
+  .belajar-online h3 span {
+    font-size: 2.5rem;
+  }
+  .belajar-online .main-image {
+    height: 200px;
+  }
+  .belajar-online .main-image img {
+    right: -30px;
+  }
+  .belajar-online .belajar-online-detail p.first {
+    font-size: 12px;
+    line-height: 30px;
+  }
+  .belajar-online .belajar-online-detail hr {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .belajar-online .belajar-online-detail .format p {
+    font-size: 10px;
+    line-height: 25px;
+  }
+  .belajar-online .belajar-online-detail .format p span {
+    font-size: 10px;
+    line-height: 25px;
+  }
+}
+@media (max-width: 415px) {
+  .belajar-online h3 {
+    font-size: 2rem;
+  }
+  .belajar-online h3 span {
+    font-size: 2rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

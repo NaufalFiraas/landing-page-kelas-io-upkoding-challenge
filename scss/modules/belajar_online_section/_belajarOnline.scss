@@ -42,6 +42,12 @@
         border-radius: 50%;
         padding: 5px;
       }
+
+      p {
+        span.bold {
+          font-weight: 600;
+        }
+      }
     }
   }
 
