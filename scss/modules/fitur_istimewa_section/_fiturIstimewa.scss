@@ -1,0 +1,75 @@
+@use '../mixins';
+
+.fitur-istimewa {
+  width: 100%;
+  height: max-content;
+  padding: 150px 10%;
+  box-sizing: border-box;
+  position: relative;
+
+  .head-fitur-istimewa {
+    width: 100%;
+    height: max-content;
+    box-sizing: border-box;
+    @include mixins.flex-display(row, space-between, center);
+
+    h3 {
+      font-size: 3rem;
+      color: #1a1a1a;
+      width: 50%;
+      text-align: left;
+      span {
+        font-size: 3rem;
+        color: #3a83f0;
+      }
+    }
+
+    a {
+      width: 50%;
+      text-align: right;
+      text-decoration: underline;
+      color: #194990;
+    }
+
+    span {
+      color: #194990;
+    }
+  }
+
+  .body-fitur-istimewa {
+    width: 100%;
+    height: max-content;
+    box-sizing: border-box;
+
+    ul {
+      width: 100%;
+      height: max-content;
+      box-sizing: border-box;
+      padding: 100px 10%;
+      @include mixins.grid-display(repeat(auto-fill, minmax(250px, 300px)), max-content, max-content, center, center, 30px);
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.5), #3a81eb60);
+      position: absolute;
+      left: 0;
+      border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+
+      li {
+        padding: 40px;
+        background-color: #fff;
+        border-radius: 20px;
+        max-width: 300px;
+        height: 320px;
+        box-sizing: border-box;
+        @include mixins.flex-display(column, space-between, flex-start);
+
+        img {
+          width: 1.5rem;
+          height: 1.5rem;
+          background-color: rgba(58, 131, 240, 0.1);
+          border-radius: 10px;
+          padding: 10px;
+        }
+      }
+    }
+  }
+}
