@@ -1,0 +1,35 @@
+@media (max-width: 770px) {
+  .fitur-istimewa {
+    .head-fitur-istimewa {
+      flex-direction: column;
+      align-items: flex-start;
+      h3 {
+        font-size: 2.5rem;
+        width: 70%;
+        margin-bottom: 50px;
+        span {
+          font-size: 2.5rem;
+        }
+      }
+
+      a {
+        text-align: left;
+        float: left;
+      }
+    }
+  }
+}
+
+@media (max-width: 415px) {
+  .fitur-istimewa {
+    .head-fitur-istimewa {
+      h3 {
+        width: 100%;
+        font-size: 2rem;
+        span {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}

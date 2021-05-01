@@ -891,9 +891,6 @@ nav .nav-toggle span:nth-child(2) {
   text-decoration: underline;
   color: #194990;
 }
-.fitur-istimewa .head-fitur-istimewa span {
-  color: #194990;
-}
 .fitur-istimewa .body-fitur-istimewa {
   width: 100%;
   height: max-content;
@@ -935,6 +932,34 @@ nav .nav-toggle span:nth-child(2) {
   background-color: rgba(58, 131, 240, 0.1);
   border-radius: 10px;
   padding: 10px;
+}
+
+@media (max-width: 770px) {
+  .fitur-istimewa .head-fitur-istimewa {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .fitur-istimewa .head-fitur-istimewa h3 {
+    font-size: 2.5rem;
+    width: 70%;
+    margin-bottom: 50px;
+  }
+  .fitur-istimewa .head-fitur-istimewa h3 span {
+    font-size: 2.5rem;
+  }
+  .fitur-istimewa .head-fitur-istimewa a {
+    text-align: left;
+    float: left;
+  }
+}
+@media (max-width: 415px) {
+  .fitur-istimewa .head-fitur-istimewa h3 {
+    width: 100%;
+    font-size: 2rem;
+  }
+  .fitur-istimewa .head-fitur-istimewa h3 span {
+    font-size: 2rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
