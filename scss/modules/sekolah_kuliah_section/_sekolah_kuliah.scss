@@ -1,0 +1,82 @@
+@use '../mixins';
+
+.sekolah-kuliah {
+  display: none;
+  width: 100%;
+  height: max-content;
+  padding: 200px 10% 0 10%;
+  box-sizing: border-box;
+  //   background-color: red;
+  position: relative;
+  @include mixins.grid-display(repeat(2, 50%), max-content, max-content, center, center, 0px);
+
+  h3 {
+    font-size: 3rem;
+    color: #1a1a1a;
+    width: 40%;
+    position: absolute;
+    right: 10%;
+    top: 150px;
+
+    span {
+      font-size: 3rem;
+      color: #3a83f0;
+    }
+  }
+
+  hr {
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+
+  .main-image {
+    display: flex;
+    position: relative;
+    height: 400px;
+    width: 100%;
+    img {
+      margin: auto;
+      width: 120%;
+      height: 150%;
+      position: absolute;
+      top: -120px;
+      left: -60px;
+    }
+    // background-color: green;
+  }
+
+  .sekolah-kuliah-detail {
+    // background-color: yellow;
+    padding-left: 20px;
+    padding-top: 150px;
+    box-sizing: border-box;
+
+    p {
+      line-height: 2rem;
+    }
+
+    .format {
+      @include mixins.flex-display(row, none, center);
+
+      img {
+        background-color: rgba(58, 131, 240, 0.15);
+        border-radius: 50%;
+        padding: 5px;
+        width: 2rem;
+        height: 2rem;
+        margin-right: 25px;
+      }
+
+      .details {
+        p {
+          font-size: 14px;
+          line-height: 35px;
+        }
+
+        .bold {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
