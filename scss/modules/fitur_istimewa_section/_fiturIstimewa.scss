@@ -3,13 +3,13 @@
 .fitur-istimewa {
   width: 100%;
   height: max-content;
-  padding: 150px 10%;
+  padding: 100px 0;
   box-sizing: border-box;
-  position: relative;
 
   .head-fitur-istimewa {
     width: 100%;
     height: max-content;
+    padding: 0 10%;
     box-sizing: border-box;
     @include mixins.flex-display(row, space-between, center);
 
@@ -44,8 +44,6 @@
       padding: 100px 10%;
       @include mixins.grid-display(repeat(auto-fill, minmax(250px, 300px)), max-content, max-content, center, center, 30px);
       background: linear-gradient(180deg, rgba(255, 255, 255, 0.5), #3a81eb60);
-      position: absolute;
-      left: 0;
       border-bottom-left-radius: 50px;
       border-bottom-right-radius: 50px;
 
