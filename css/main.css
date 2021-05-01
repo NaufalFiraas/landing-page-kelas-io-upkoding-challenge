@@ -963,6 +963,10 @@ nav .nav-toggle span:nth-child(2) {
   .fitur-istimewa .head-fitur-istimewa h3 span {
     font-size: 2rem;
   }
+  .fitur-istimewa .body-fitur-istimewa ul li p {
+    font-size: 12px;
+    line-height: 30px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
