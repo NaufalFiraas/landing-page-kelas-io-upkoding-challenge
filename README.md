@@ -1,0 +1,2 @@
+# landing-page-kelas-io-upkoding-challenge
+Membuat landing page yang responsive sesuai desain yang diberikan. Dengan ketentuan hanya menggunakan html dan css tanpa framework dan tanpa javascript. Pada project ini saya menggunakan salah satu css pre-processor yaitu sass/scss. Alasannya adalah dengan menggunakan sass/scss, memudahkan kita untuk membuat file-file di css menjadi modular, adanya fitur mixin yang bisa dipanggil berulang-ulang, serta penulisan nesting yang memudahkan dalam menuliskan dan membaca baris-baris kode dan mengelompokkan style per-section
