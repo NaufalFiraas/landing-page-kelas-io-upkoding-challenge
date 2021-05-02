@@ -1071,4 +1071,79 @@ nav .nav-toggle span:nth-child(2) {
   left: -135px;
 }
 
+@media (max-width: 992px) {
+  .cerita-inspiratif h3 {
+    margin-bottom: 150px;
+    margin-bottom: 10px;
+  }
+  .cerita-inspiratif .description .head-quote {
+    width: 120px;
+    height: 120px;
+  }
+  .cerita-inspiratif .description .bottom-quote {
+    width: 120px;
+    height: 120px;
+    left: 60%;
+    top: 65%;
+  }
+  .cerita-inspiratif .description .head {
+    grid-template-columns: 100%;
+    grid-template-areas: "img" "detail";
+  }
+  .cerita-inspiratif .description .head .details {
+    padding: 50px 0;
+  }
+  .cerita-inspiratif .description .head .details p.first {
+    margin-top: 250px;
+  }
+  .cerita-inspiratif .description .head img {
+    width: 500px;
+    height: 350px;
+    top: -110px;
+    right: 0;
+  }
+  .cerita-inspiratif .description .bottom {
+    grid-template-columns: 100%;
+    grid-template-areas: "img" "detail";
+  }
+  .cerita-inspiratif .description .bottom .details p.first {
+    margin-top: 50px;
+  }
+  .cerita-inspiratif .description .bottom img {
+    width: 500px;
+    height: 350px;
+    top: 0px;
+    left: -100px;
+  }
+}
+@media (max-width: 770px) {
+  .cerita-inspiratif h3 {
+    font-size: 2.5rem;
+    margin-bottom: 70px;
+  }
+  .cerita-inspiratif .description .head {
+    margin-bottom: 0;
+  }
+  .cerita-inspiratif .description .head .details p.first {
+    font-size: 12px;
+    line-height: 30px;
+  }
+  .cerita-inspiratif .description .head .details p {
+    font-size: 10px;
+  }
+  .cerita-inspiratif .description .head .details p span {
+    font-size: 10px;
+  }
+  .cerita-inspiratif .description .bottom .details p.first {
+    font-size: 12px;
+    line-height: 30px;
+  }
+  .cerita-inspiratif .description .bottom .details p {
+    font-size: 10px;
+  }
+  .cerita-inspiratif .description .bottom .details p span {
+    font-size: 10px;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
