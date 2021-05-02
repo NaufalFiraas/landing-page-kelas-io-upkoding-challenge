@@ -28,8 +28,6 @@
     .head-quote,
     .bottom-quote {
       position: absolute;
-      top: 0;
-      left: 0;
     }
 
     .head-quote {
@@ -48,7 +46,6 @@
       margin-bottom: 30px;
       @include mixins.grid-display(repeat(2, 50%), max-content, max-content, space-between, center, 0);
       grid-template-areas: 'detail img';
-      //   background-color: red;
       position: relative;
 
       .details {
@@ -82,7 +79,6 @@
       height: max-content;
       @include mixins.grid-display(repeat(2, 50%), max-content, max-content, space-between, center, 0);
       grid-template-areas: 'img detail';
-      //   background-color: yellow;
       position: relative;
 
       .details {
