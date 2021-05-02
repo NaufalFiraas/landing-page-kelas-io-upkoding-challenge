@@ -43,7 +43,7 @@
       box-sizing: border-box;
       padding: 100px 10%;
       @include mixins.grid-display(repeat(auto-fill, minmax(250px, 300px)), max-content, max-content, center, center, 30px);
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.5), #3a81eb60);
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.5), rgba(58, 131, 240, 0.1));
       border-bottom-left-radius: 50px;
       border-bottom-right-radius: 50px;
 

@@ -908,7 +908,7 @@ nav .nav-toggle span:nth-child(2) {
   justify-content: center;
   align-items: center;
   gap: 30px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.5), #3a81eb60);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.5), rgba(58, 131, 240, 0.1));
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
 }
@@ -962,6 +962,9 @@ nav .nav-toggle span:nth-child(2) {
   }
   .fitur-istimewa .head-fitur-istimewa h3 span {
     font-size: 2rem;
+  }
+  .fitur-istimewa .head-fitur-istimewa a {
+    width: 100%;
   }
   .fitur-istimewa .body-fitur-istimewa ul li p {
     font-size: 12px;
