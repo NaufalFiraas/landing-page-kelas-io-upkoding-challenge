@@ -1,0 +1,62 @@
+@use '../mixins';
+.wujudkan-perubahan {
+  width: 100%;
+  height: max-content;
+  padding: 10%;
+  box-sizing: border-box;
+  @include mixins.flex-display(column, center, center);
+
+  h3 {
+    text-align: center;
+    font-size: 3rem;
+    color: #1a1a1a;
+    margin-bottom: 2rem;
+    span {
+      font-size: 3rem;
+      color: #3a83f0;
+    }
+  }
+
+  p {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .buttons {
+    @include mixins.flex-display(row, center, center);
+
+    button {
+      cursor: pointer;
+      padding: 0.9rem 2rem;
+      border-radius: 10px;
+      border: none;
+      transition: all 0.3s ease;
+
+      &.download {
+        margin-right: 2.2rem;
+        background-color: #3a83f0;
+        color: #fff;
+        font-weight: 600;
+        border: 1px solid #fff;
+
+        &:hover {
+          background-color: #fff;
+          color: #3a83f0;
+          border: 1px solid #3a83f0;
+        }
+      }
+
+      &.bantuan {
+        background-color: #fff;
+        border: 1px solid #3a83f0;
+        color: #3a83f0;
+
+        &:hover {
+          color: #fff;
+          background-color: #3a83f0;
+          border: 1px solid #fff;
+        }
+      }
+    }
+  }
+}

@@ -1210,5 +1210,89 @@ nav .nav-toggle span:nth-child(2) {
     top: 20px;
   }
 }
+.wujudkan-perubahan {
+  width: 100%;
+  height: max-content;
+  padding: 10%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wujudkan-perubahan h3 {
+  text-align: center;
+  font-size: 3rem;
+  color: #1a1a1a;
+  margin-bottom: 2rem;
+}
+.wujudkan-perubahan h3 span {
+  font-size: 3rem;
+  color: #3a83f0;
+}
+.wujudkan-perubahan p {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.wujudkan-perubahan .buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.wujudkan-perubahan .buttons button {
+  cursor: pointer;
+  padding: 0.9rem 2rem;
+  border-radius: 10px;
+  border: none;
+  transition: all 0.3s ease;
+}
+.wujudkan-perubahan .buttons button.download {
+  margin-right: 2.2rem;
+  background-color: #3a83f0;
+  color: #fff;
+  font-weight: 600;
+  border: 1px solid #fff;
+}
+.wujudkan-perubahan .buttons button.download:hover {
+  background-color: #fff;
+  color: #3a83f0;
+  border: 1px solid #3a83f0;
+}
+.wujudkan-perubahan .buttons button.bantuan {
+  background-color: #fff;
+  border: 1px solid #3a83f0;
+  color: #3a83f0;
+}
+.wujudkan-perubahan .buttons button.bantuan:hover {
+  color: #fff;
+  background-color: #3a83f0;
+  border: 1px solid #fff;
+}
+
+@media (max-width: 770px) {
+  .wujudkan-perubahan h3 {
+    font-size: 2.5rem;
+    width: 100%;
+  }
+  .wujudkan-perubahan h3 span {
+    font-size: 2.5rem;
+  }
+  .wujudkan-perubahan p {
+    font-size: 12px;
+    line-height: 30px;
+  }
+  .wujudkan-perubahan .buttons button {
+    padding: 0.8rem 1.3rem;
+  }
+}
+@media (max-width: 415px) {
+  .wujudkan-perubahan h3 {
+    font-size: 2rem;
+  }
+  .wujudkan-perubahan h3 span {
+    font-size: 2rem;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
