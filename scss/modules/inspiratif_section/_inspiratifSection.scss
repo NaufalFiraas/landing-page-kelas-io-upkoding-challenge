@@ -1,0 +1,113 @@
+@use '../mixins';
+
+.cerita-inspiratif {
+  width: 100%;
+  height: max-content;
+  box-sizing: border-box;
+
+  h3 {
+    font-size: 3rem;
+    color: #1a1a1a;
+    padding: 0 10%;
+    width: 50%;
+    margin-bottom: 50px;
+    span {
+      font-size: 3rem;
+      color: #3a83f0;
+    }
+  }
+
+  .description {
+    width: 100%;
+    height: max-content;
+    padding: 0 10%;
+    box-sizing: border-box;
+    background-color: rgba(58, 131, 240, 0.05);
+    position: relative;
+
+    .head-quote,
+    .bottom-quote {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .head-quote {
+      left: 10%;
+      top: 20px;
+    }
+
+    .bottom-quote {
+      left: 35%;
+      top: 55%;
+    }
+
+    .head {
+      width: 100%;
+      height: max-content;
+      margin-bottom: 30px;
+      @include mixins.grid-display(repeat(2, 50%), max-content, max-content, space-between, center, 0);
+      grid-template-areas: 'detail img';
+      //   background-color: red;
+      position: relative;
+
+      .details {
+        grid-area: detail;
+        padding: 50px 10%;
+
+        p.first {
+          font-size: 1.2rem;
+          line-height: 35px;
+          margin-bottom: 3rem;
+        }
+
+        p {
+          span {
+            color: #194990;
+          }
+        }
+      }
+
+      img {
+        grid-area: img;
+        width: 120%;
+        height: 450px;
+        position: absolute;
+        top: -143px;
+      }
+    }
+
+    .bottom {
+      width: 100%;
+      height: max-content;
+      @include mixins.grid-display(repeat(2, 50%), max-content, max-content, space-between, center, 0);
+      grid-template-areas: 'img detail';
+      //   background-color: yellow;
+      position: relative;
+
+      .details {
+        grid-area: detail;
+
+        p.first {
+          font-size: 1.2rem;
+          line-height: 35px;
+          margin-bottom: 3rem;
+        }
+
+        p {
+          span {
+            color: #194990;
+          }
+        }
+      }
+
+      img {
+        grid-area: img;
+        width: 120%;
+        height: 450px;
+        position: relative;
+        left: -135px;
+      }
+    }
+  }
+}

@@ -968,5 +968,107 @@ nav .nav-toggle span:nth-child(2) {
     line-height: 30px;
   }
 }
+.cerita-inspiratif {
+  width: 100%;
+  height: max-content;
+  box-sizing: border-box;
+}
+.cerita-inspiratif h3 {
+  font-size: 3rem;
+  color: #1a1a1a;
+  padding: 0 10%;
+  width: 50%;
+  margin-bottom: 50px;
+}
+.cerita-inspiratif h3 span {
+  font-size: 3rem;
+  color: #3a83f0;
+}
+.cerita-inspiratif .description {
+  width: 100%;
+  height: max-content;
+  padding: 0 10%;
+  box-sizing: border-box;
+  background-color: rgba(58, 131, 240, 0.05);
+  position: relative;
+}
+.cerita-inspiratif .description .head-quote,
+.cerita-inspiratif .description .bottom-quote {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.cerita-inspiratif .description .head-quote {
+  left: 10%;
+  top: 20px;
+}
+.cerita-inspiratif .description .bottom-quote {
+  left: 35%;
+  top: 55%;
+}
+.cerita-inspiratif .description .head {
+  width: 100%;
+  height: max-content;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: max-content;
+  grid-auto-rows: max-content;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+  grid-template-areas: "detail img";
+  position: relative;
+}
+.cerita-inspiratif .description .head .details {
+  grid-area: detail;
+  padding: 50px 10%;
+}
+.cerita-inspiratif .description .head .details p.first {
+  font-size: 1.2rem;
+  line-height: 35px;
+  margin-bottom: 3rem;
+}
+.cerita-inspiratif .description .head .details p span {
+  color: #194990;
+}
+.cerita-inspiratif .description .head img {
+  grid-area: img;
+  width: 120%;
+  height: 450px;
+  position: absolute;
+  top: -143px;
+}
+.cerita-inspiratif .description .bottom {
+  width: 100%;
+  height: max-content;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: max-content;
+  grid-auto-rows: max-content;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+  grid-template-areas: "img detail";
+  position: relative;
+}
+.cerita-inspiratif .description .bottom .details {
+  grid-area: detail;
+}
+.cerita-inspiratif .description .bottom .details p.first {
+  font-size: 1.2rem;
+  line-height: 35px;
+  margin-bottom: 3rem;
+}
+.cerita-inspiratif .description .bottom .details p span {
+  color: #194990;
+}
+.cerita-inspiratif .description .bottom img {
+  grid-area: img;
+  width: 120%;
+  height: 450px;
+  position: relative;
+  left: -135px;
+}
 
 /*# sourceMappingURL=main.css.map */
